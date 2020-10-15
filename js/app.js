@@ -273,7 +273,7 @@ dubai.render();
 paris.render();
 lima.render();
 
-var homePage = document.getElementById('homepage');
+var homePage = document.getElementById('top');
 var img = document.createElement('img');
 img.setAttribute('src', 'img/salmon.png');
 img.setAttribute('alt', 'picture of logo of product');
