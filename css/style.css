@@ -1,10 +1,14 @@
 body{
-  background-color: #fac8b6;
+  /* background-color: #fac8b6;
+   */
+  background-image: repeating-linear-gradient(#fa8072, #FFA07A, #fab28b, #fad099, #fadfb0);
+  background-repeat: no-repeat;
+  background-size: cover;
   margin: 30px auto;
   width: 90%;
+  height: 100%;
   text-align:center;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-
 }
 
 h1 {
@@ -12,17 +16,13 @@ h1 {
   font-size: 28px;
   transition: all .4s linear;
   font-style: italic;
-  color: rgba(28, 28, 28, 0.721)
+  color: rgba(28, 28, 28, 0.721);
+  font-family: 'Lobster', cursive;
 }
 
 h1:hover {
   letter-spacing: 5px;
 }
-
-/* #header-sales {
-  text-align: center;
-  margin:auto
-} */
 
 nav li {
   float:right;
@@ -37,7 +37,6 @@ nav li {
 
 nav li:hover, td:hover {
   background-color: #fa8072;
-
 }
 
 nav a:visited:active {
@@ -47,7 +46,7 @@ nav a:visited:active {
 }
 
 #banner {
-  background-color: #fadfb0;
+  /* background-color: #fadfb0; */
   width: 100%;
   z-index: 999;
   position: fixed;
@@ -87,7 +86,6 @@ table {
   margin: auto;
   border-spacing: 8px;
   font-size: 12px;
-  
 }
 
 td, th {
@@ -97,6 +95,14 @@ td, th {
   color: rgba(28, 28, 28, 0.721)
 }
 
-#space {
-width: 20px
+#container-1{
+  display: flex;
+  justify-content: space-around;
+  margin: 10px;
+  padding: 15px;
+}
+
+.box {
+  width: 20%;
+  padding: 30px
 }
