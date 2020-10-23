@@ -1,18 +1,16 @@
-body{
-  /* background-color: #fac8b6;
-   */
+/* All section */
+body {
   background-image: repeating-linear-gradient(#fa8072, #FFA07A, #fab28b, #fad099, #fadfb0);
   background-repeat: no-repeat;
   background-size: cover;
   margin: 30px auto;
-  width: 90%;
-  height: 100%;
-  text-align:center;
+  text-align: center;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
+/* header */
 h1 {
-  float:left;
+  float: left;
   font-size: 28px;
   transition: all .4s linear;
   font-style: italic;
@@ -25,7 +23,8 @@ h1:hover {
 }
 
 nav li {
-  float:right;
+  font-family: 'Lobster', cursive;
+  float: right;
   margin-right: 10px;
   color: rgba(28, 28, 28, 0.721);
   background-color: #fcb2aa;
@@ -46,9 +45,9 @@ nav a:visited:active {
 }
 
 #banner {
-  /* background-color: #fadfb0; */
+  font-family: 'Lobster', cursive;
   width: 100%;
-  z-index: 999;
+  z-index: 998;
   position: fixed;
   padding: 15px;
   top: 0;
@@ -67,19 +66,52 @@ h2 {
   font-size: 20px;
 }
 
-/* h2, article ul {
-background-color: #fadfb0;
-box-shadow: 3px 5px 15px rgba(0, 0, 0, .25);
-border-radius: 30px;
-padding: 10px;
-color: rgba(28, 28, 28, 0.721)
+/* main */
+main {
+  margin: auto
 }
-article {
-  margin: 20px 0
+main h2 {
+  font-size: 36px;
+  font-family: 'Lobster', cursive;
+  font-style: italic;
 }
-article li {
-  margin: 5px 0
-} */
+
+main h3 {
+  margin-top: 150px;
+  font-family: 'Lobster', cursive;
+  font-size: 34px;
+  text-decoration: underline;
+}
+
+section {
+  margin-top: 30px
+}
+section ul li:first-child {
+  font-size: 30px;
+  font-family: 'Lobster', cursive;
+}
+section ul li {
+  font-size: 28px
+}
+
+#row-1 {
+  display: flex;
+  justify-content: space-around;
+}
+
+
+#row-2 {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 100px
+}
+
+#contact {
+  margin-top: 100px;
+  font-size: 40px;
+}
+
+/* tabele */
 
 table {
   padding: 5px;
@@ -93,16 +125,4 @@ td, th {
   border-radius: 30px;
   box-shadow: 3px 5px 15px rgba(0, 0, 0, .25);
   color: rgba(28, 28, 28, 0.721)
-}
-
-#container-1{
-  display: flex;
-  justify-content: space-around;
-  margin: 10px;
-  padding: 15px;
-}
-
-.box {
-  width: 20%;
-  padding: 30px
 }
