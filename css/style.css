@@ -68,15 +68,30 @@ h2 {
 /* main */
 main {
   margin: auto;
-  width: 960px
+  /* width: 960px */
+}
+
+main img {
+  box-shadow: 3px 5px 15px rgba(0, 0, 0, .25);
+}
+
+#family {
+  margin: 40px 0 20px 0;
+  border-radius: 50%;
 }
 
 #cutter {
   float: left;
+  border-radius: 50%;
 }
 
 #cookie {
-  float:right
+  float:right;
+  border-radius: 50%;
+}
+
+#section1 p {
+ 
 }
 
 #article2 {
