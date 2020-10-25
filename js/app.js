@@ -3,12 +3,12 @@
 // referenced source: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/random
 
 
-// Jenner ~ upload image
-var homePage = document.getElementById('top');
-var img = document.createElement('img');
-img.setAttribute('src', 'img/salmon.png');
-img.setAttribute('alt', 'picture of logo of product');
-homePage.appendChild(img);
+// // Jenner ~ upload image
+// var homePage = document.getElementById('top');
+// var img = document.createElement('img');
+// img.setAttribute('src', 'img/salmon.png');
+// img.setAttribute('alt', 'picture of logo of product');
+// homePage.appendChild(img);
 
 // Jenner ~ global variables
 var times = ['6am', '7am', '8am', '9am', '10am', '11am', '12pm', '1pm', '2pm', '3pm', '4pm', '5pm', '6pm', '7pm'];
@@ -55,18 +55,9 @@ function renderFirstRow() {
 
 }
 
-//
-function renderLastRow() {
-
-  // total cell
-  var tr = document.createElement('tr');
-  var td = document.createElement('td');
-  td.textContent = 'Total';
-
-  tr.appendChild(td);
-  tfoot.appendChild(tr);
+// Jenner ~ hourly totals (all locations)
+function calculateTotals(){
   
-  // Jenner ~ hourly totals (all locations)
   for (var i = 0; i < times.length; i++){
     var sales = 0;
     for (var j = 0; j < listOfStores.length; j++){
@@ -75,6 +66,20 @@ function renderLastRow() {
     allLocationsHourly.push(sales);
     grandTotal += sales;
   }
+}
+
+function renderLastRow() {
+  allLocationsHourly = [];
+  grandTotal = 0;
+  calculateTotals();
+  // total cell
+  var tr = document.createElement('tr');
+  var th = document.createElement('th');
+  var td = document.createElement('td');
+  th.textContent = 'Total';
+
+  tr.appendChild(th);
+  tfoot.appendChild(tr);
 
   for (var i = 0; i < allLocationsHourly.length; i++) {
     td = document.createElement('td');
@@ -126,9 +131,10 @@ CookieShop.prototype.render = function () {
   // Jenner ~ store title
 
   var tr = document.createElement('tr');
-  var td = document.createElement('td');
-  td.textContent = this.location;
-  tr.appendChild(td);
+  var th = document.createElement('th');
+  var td = document.createElement('td')
+  th.textContent = this.location;
+  tr.appendChild(th);
 
   // this is each iteration of hourly sales
   for (var i = 0; i < this.dailyReport.length; i++) {
@@ -153,3 +159,23 @@ new CookieShop('Lima', 2, 16, 4.6);
 renderFirstRow();
 renderAllLocations();
 renderLastRow();
+
+// form async
+
+function submitHandler(e){
+  e.preventDefault();
+
+  var location = e.target.location.value;
+  var minimum = e.target.minimum.value;
+  var maximum = e.target.maximum.value;
+  var averageSales = e.target.averageSales.value;
+
+  var newLocation = new CookieShop(location, minimum, maximum, averageSales);
+
+  newLocation.render();
+  tfoot.innerHTML = '';
+  renderLastRow();
+};
+
+var container = document.getElementById('newlocation');
+container.addEventListener('submit', submitHandler);
