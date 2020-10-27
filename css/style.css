@@ -8,6 +8,19 @@ body {
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
+.boldhr {
+  border: 5px solid black;
+  border-radius: 50px;
+  width: 65%;
+}
+
+hr {
+  border: 3px dotted black;
+  border-radius: 50px;
+  width: 55%;
+}
+
+
 /* header */
 h1 {
   float: left;
@@ -55,9 +68,6 @@ nav a:visited:active {
   font-family: 'Didot';
 }
 
-#banner li:hover {
-  cursor: pointer;
-}
 
 h2 {
   text-decoration: underline;
@@ -66,9 +76,14 @@ h2 {
 }
 
 /* main */
-main {
+#main-index {
   margin: auto;
-  /* width: 960px */
+  width: 960px;
+}
+
+#salmon {
+  box-shadow: none;
+  margin-top: 40px
 }
 
 main img {
@@ -90,12 +105,9 @@ main img {
   border-radius: 50%;
 }
 
-#section1 p {
- 
-}
-
 #article2 {
   margin-top: 30px;
+  margin-bottom: 30px;
   clear: both;
   float: right
 }
@@ -115,7 +127,7 @@ main h2 {
 }
 
 main h3 {
-  margin-top: 150px;
+  margin-top: 50px;
   font-family: 'Lobster', cursive;
   font-size: 34px;
   text-decoration: underline;
@@ -124,19 +136,37 @@ main h3 {
 section {
   margin-top: 30px
 }
+
 section ul li:first-child {
   font-size: 30px;
-  font-family: 'Lobster', cursive;
+  font-family: 'Lobster', cursive;`
 }
-section ul li {
-  font-size: 28px
+
+section ul li, #contact-info li {
+  font-size: 24px
+}
+
+#cost, #section2 a {
+  font-size: 60px;
+  text-transform: uppercase;
+  color: black
+}
+
+#cost:hover {
+  font-style: italic;
+  color: red
+}
+
+/* locations */
+
+#locations {
+  margin-bottom:40px
 }
 
 #row-1 {
   display: flex;
   justify-content: space-around;
 }
-
 
 #row-2 {
   display: flex;
@@ -145,7 +175,21 @@ section ul li {
 }
 
 #contact {
-  margin-top: 100px;
+  margin-bottom: 20px;
   font-size: 40px;
+  clear: both;
 }
 
+#contact-info {
+  margin-bottom: 30px
+}
+
+main img:last-child {
+  margin-top: 40px
+}
+
+footer {
+  margin-top: 50px;
+  margin-right: 50px;
+  /* text-align: right */
+}

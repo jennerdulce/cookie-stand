@@ -1,0 +1,109 @@
+body {
+  background-image: repeating-linear-gradient(#fa8072, #FFA07A, #fab28b, #fad099, #fadfb0);
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 30px auto;
+  text-align: center;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  width: 960px
+}
+
+/* banner */
+
+h1 {
+  float: left;
+  font-size: 28px;
+  transition: all .4s linear;
+  font-style: italic;
+  color: rgba(28, 28, 28, 0.721);
+  font-family: 'Lobster', cursive;
+}
+
+h1:hover {
+  letter-spacing: 5px;
+}
+
+nav li {
+  font-family: 'Lobster', cursive;
+  float: right;
+  margin-right: 35px;
+  color: rgba(28, 28, 28, 0.721);
+  background-color: #fcb2aa;
+  border-radius: 30px;
+  padding: 5px;
+  outline-color: none;
+  transition: all .3s ease-in;
+}
+
+nav li:hover {
+  background-color: #fa8072;
+}
+
+nav a:visited:active {
+  background-color: #fa8072;
+  color: black;
+  text-decoration: none;
+}
+
+#banner {
+  font-family: 'Lobster', cursive;
+  width: 100%;
+  z-index: 998;
+  position: fixed;
+  padding: 15px;
+  top: 0;
+  left: 0;
+  font-family: 'Didot';
+}
+
+
+h2 {
+  text-decoration: underline;
+  margin-bottom: 10px;
+  font-size: 20px;
+}
+
+table {
+  padding: 5px;
+  margin: auto;
+  font-size: 12px;
+  margin-bottom: 50px;
+}
+
+h2 {
+  margin: 80px 0
+}
+
+td, th {
+  padding: 5px 15px;
+  border: 2px solid black;
+  box-shadow: 3px 5px 15px rgba(0, 0, 0, .25);
+  color: rgba(28, 28, 28, 0.721);
+}
+
+td {
+  font-size: 18px
+}
+
+input {
+  width: 60px;
+  font-size: 18px
+}
+
+.hidetd {
+  border: none;
+  box-shadow: none;
+}
+
+button {
+  padding: 10px;
+  font-size: 18px;
+  margin-top:8px
+}
+
+
+main h2 {
+  font-size: 36px;
+  font-family: 'Lobster', cursive;
+  font-style: italic;
+}
