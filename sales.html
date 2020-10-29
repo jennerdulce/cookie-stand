@@ -1,10 +1,13 @@
 <!DOCTYPE html>
 <html lang='en-US'>
   <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/sales.css">
     <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <link rel="icon" href="img/favicon-16x16.png" type="images/favicon.ico" sizes="16x16">
+    <title>Pat's Salmon Cookies</title>
   </head>
   <body>
     <header id="top">
@@ -14,7 +17,7 @@
           <ul>
             <li><a href="#">Newsletter</a></li>
             <li><a href="store.html">Store</a></li>
-            <li><a href="#">Contact Us</a></li>
+            <li><a href="index.html#contact">Contact Us</a></li>
             <li><a href="sales.html">Sales</a></li>
           </ul>
         </nav>
@@ -31,22 +34,22 @@
               </label>
             </li>
             <li>
-              <label>Minimum Daily Customers
+              <label>Minimum Daily Customers: 
                 <input type="number" name="minimum">
               </label>
             </li>
             <li>
-              <label>Maximum Daily Customers
+              <label>Maximum Daily Customers: 
                 <input type="number" name="maximum">
               </label>
             </li>
             <li>
-              <label>Average Cookies Sold Per Customer
+              <label>Average Cookies Sold Per Customer: 
                 <input type="float" name="averageSales">
               </label>
             </li>
           </ul>
-          <input type="submit" value="Submit">
+          <input id="submit" type="submit" value="Submit">
         </fieldset>
       </form>
       <table id="main-table">
