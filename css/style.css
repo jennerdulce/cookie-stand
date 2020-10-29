@@ -7,6 +7,9 @@ body {
   text-align: center;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
+p {
+  color: rgba(28, 28, 28, 0.721);
+}
 
 .boldhr {
   border: 5px solid black;
@@ -60,7 +63,6 @@ nav a:visited:active {
 #banner {
   font-family: 'Lobster', cursive;
   width: 100%;
-  z-index: 998;
   position: fixed;
   padding: 15px;
   top: 0;
@@ -83,7 +85,7 @@ h2 {
 
 #salmon {
   box-shadow: none;
-  margin-top: 40px
+  margin: 40px 0
 }
 
 main img {
@@ -139,11 +141,13 @@ section {
 
 section ul li:first-child {
   font-size: 30px;
-  font-family: 'Lobster', cursive;`
+  font-family: 'Lobster', cursive;
+  color: black
 }
 
 section ul li, #contact-info li {
-  font-size: 24px
+  font-size: 24px;
+  color: rgba(28, 28, 28, 0.721);
 }
 
 #cost, #section2 a {
@@ -171,7 +175,7 @@ section ul li, #contact-info li {
 #row-2 {
   display: flex;
   justify-content: space-around;
-  margin-top: 100px
+  margin-top: 50px
 }
 
 #contact {

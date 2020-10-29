@@ -1,19 +1,22 @@
 <!DOCTYPE html>
 <html lang='en-US'>
   <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/store.css">
     <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <link rel="icon" href="img/favicon-16x16.png" type="images/favicon.ico" sizes="16x16">
+    <title>Salmon Cookies</title>
   </head>
   <body>
     <header id="homepage">
       <div id="banner">
-        <a href="index.html"><h1>Salmon Cookies</h1></a>
+        <a href="index.html"><h1> Pat's Salmon Cookies</h1></a>
         <nav>
           <ul>
             <li><a href="#">Newsletter</a></li>
             <li><a href="store.html">Store</a></li>
-            <li><a href="#">Contact Us</a></li>
+            <li><a href="index.html#contact">Contact Us</a></li>
             <li><a href="sales.html">Sales</a></li>
           </ul>
         </nav>
@@ -21,33 +24,26 @@
     </header>
     <main id="main-index">
       <h2>Merchandise</h2>
-      <table>
-        <tr>
-          <td><img id="cutter" src="img/cutter.jpeg" alt="cookie cutter"></td>
-          <td>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem beatae iste doloribus aliquid voluptates, quisquam id rerum necessitatibus! Reiciendis suscipit adipisci eveniet aliquid libero illum harum pariatur rerum eaque quod! lorem Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis sed adipisci optio maxime error quo dolorem, assumenda nostrum exercitationem iure odit! Dignissimos, odio. Maxime tempore explicabo modi unde consectetur voluptatibus!</td>
-          <td>QTY<input type="number" name="cutterquantity"></td>
-        </tr>
-        <tr>
-          <td><img id="cookie" src="img/frosted-cookie.jpg" alt="delicious frosted cookie"></td>
-          <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem dignissimos sit odit excepturi est cumque deserunt corporis veniam quos! Officiis possimus non odit excepturi asperiores a quaerat fugiat error deserunt! Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique possimus porro, eveniet sapiente voluptates eius facere nisi veniam libero necessitatibus? Esse error inventore quas architecto soluta tempora sit expedita exercitationem?</td>
-          <td>QTY<input type="number" name="cookiequantity"></td>
-        </tr>
-        <tr>
-          <td><img src="img/shirt.jpg" alt="fish shirt"></td>
-          <td>80% Cotton 20% Nylon blend. This ultra-soft, moisture-wicking knit fabric provides a versatile layer with a loose and light fit for maximum range of motion. Made here in the US and A.</td>
-          <td>QTY<input type="number" name="shirtquantity"></td>
-        </tr>
-        <tr>
-          <td><img src="img/fish.jpg" alt="fish art"></td>
-          <td>100% Authentic original paintings by Pablo Picasso.</td>
-          <td>QTY<input type="number" name="artquantity"></td>
-        </tr>
-        <tr>
-          <td class="hidetd"></td>
-          <td class="hidetd"></td>
-          <td class="hidetd"><button>Checkout</button></td>
-        </tr>
-      </table>
+      <section class="storerow">
+        <img id="cutter" src="img/cutter.jpeg" alt="cookie cutter">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem beatae iste doloribus aliquid voluptates, quisquam id rerum necessitatibus! Reiciendis suscipit adipisci eveniet aliquid libero illum harum pariatur rerum eaque quod! lorem Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis sed adipisci optio maxime error quo dolorem, assumenda nostrum exercitationem iure odit! Dignissimos, odio. Maxime tempore explicabo modi unde consectetur voluptatibus! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem corporis expedita ullam itaque reiciendis, corrupti repellat nostrum vitae quisquam nisi, sunt consequatur explicabo cumque, sed suscipit ex vero laudantium saepe.</p>
+        <input type="number" name="cutterquantity" placeholder="Enter quantity..."></td>
+      </section>
+      <section id="cookie" class="storerow">
+        <img src="img/frosted-cookie.jpg" alt="delicious frosted cookie">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem dignissimos sit odit excepturi est cumque deserunt corporis veniam quos! Officiis possimus non odit excepturi asperiores a quaerat fugiat error deserunt! Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique possimus porro, eveniet sapiente voluptates eius facere nisi veniam libero necessitatibus? Esse error inventore quas architecto soluta tempora sit expedita exercitationem?</p>
+        <input type="number" name="cookiequantity"></td>
+      </section>
+      <section class="storerow">
+        <img src="img/shirt.jpg" alt="fish shirt">
+        <p>80% Cotton 20% Nylon blend. This ultra-soft, moisture-wicking knit fabric provides a versatile layer with a loose and light fit for maximum range of motion. Made here in the US and A.</p>
+        <input type="number" name="shirtquantity"></td>
+      </section>
+      <section class="storerow">
+        <img src="img/fish.jpg" alt="fish art">
+        <p>100% Authentic original paintings by Pablo Picasso.</p>
+        <input type="number" name="artquantity">
+      </section>
     </main>
     <footer>
       &copy; Jenner Dulce 2020
