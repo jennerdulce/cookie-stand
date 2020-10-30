@@ -67,7 +67,7 @@ label {
   margin: auto;
   border-spacing: 8px;
   font-size: 12px;
-  margin-bottom: 50px
+  margin-bottom: 50px;
 }
 
 #main-table td, #main-table th {
@@ -84,4 +84,11 @@ th {
 
 td {
   font-size: 14px
+}
+
+footer p {
+  background-color: rgba(255, 255, 255, 0.982);
+  padding: 20px;
+  border-radius: 45px;
+  box-shadow: 3px 5px 15px rgba(0, 0, 0, .25);
 }
