@@ -2,7 +2,7 @@ body {
   background-image: repeating-linear-gradient(#fa8072, #FFA07A, #fab28b, #fad099, #fadfb0);
   background-repeat: no-repeat;
   background-size: cover;
-  margin: 30px auto;
+  margin: 100px auto;
   text-align: center;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   width: 960px
@@ -64,7 +64,8 @@ h2 {
 }
 
 h2 {
-  margin: 80px 0
+  margin: 30px 0;
+  font-family: 'Lobster', cursive;
 }
 
 .storerow {
@@ -92,6 +93,7 @@ h2 {
   /* width: 20%; */
   /* display: block */
   float: right;
+  margin-right: 60px
 }
 
 #cookie {
@@ -100,4 +102,11 @@ h2 {
 
 footer {
   clear:both
+}
+
+#main-index {
+  background-color: rgba(255, 255, 255, 0.653);
+  padding: 20px;
+  border-radius: 45px;
+  box-shadow: 3px 5px 15px rgba(0, 0, 0, .25);
 }

@@ -75,21 +75,20 @@ function renderLastRow() {
   // total cell
   var tr = document.createElement('tr');
   var th = document.createElement('th');
-  var td = document.createElement('td');
   th.textContent = 'Total';
 
   tr.appendChild(th);
   tfoot.appendChild(tr);
 
   for (var i = 0; i < allLocationsHourly.length; i++) {
-    td = document.createElement('td');
-    td.textContent = allLocationsHourly[i];
-    tr.appendChild(td)
+    th = document.createElement('th');
+    th.textContent = allLocationsHourly[i];
+    tr.appendChild(th)
   }
 
-  td = document.createElement('td');
-  td.textContent = grandTotal;
-  tr.appendChild(td);
+  th = document.createElement('th');
+  th.textContent = grandTotal;
+  tr.appendChild(th);
   tfoot.appendChild(tr);
   parentElement.appendChild(tfoot);
 }
@@ -131,10 +130,9 @@ CookieShop.prototype.render = function () {
   // Jenner ~ store title
 
   var tr = document.createElement('tr');
-  var th = document.createElement('th');
   var td = document.createElement('td')
-  th.textContent = this.location;
-  tr.appendChild(th);
+  td.textContent = this.location;
+  tr.appendChild(td);
 
   // this is each iteration of hourly sales
   for (var i = 0; i < this.dailyReport.length; i++) {
